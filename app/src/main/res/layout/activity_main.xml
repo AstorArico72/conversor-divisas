@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Etiqueta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dólares"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="30dp"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/EtiquetaTitulo"
+        android:layout_width="wrap_content"
+        android:text="Conversor de divisas"
+        android:layout_marginStart="70dp"
+        android:layout_height="45dp"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="70dp"/>
+
+    <EditText
+        android:id="@+id/Entrada2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="200dp"
+        android:textSize="25dp"
+        android:layout_marginStart="120dp"/>
+
+    <TextView
+        android:id="@+id/Etiqueta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Euros"
+        android:textSize="25dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/Entrada1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/black"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="120dp"
+        android:textSize="25dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BotonConvertir"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="150dp"
+        android:text="Convertir"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BotonesRadio">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dólares a Euros"
+            android:id="@+id/DeUsdRadio"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="150dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euros a Dólares"
+            android:id="@+id/DeEurRadio"
+            android:layout_marginStart="250dp"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Resultado"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="100dp"
+        android:id="@+id/SalidaResultado"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
